@@ -79,6 +79,7 @@ export function mudarStatus(id, novoStatus) {
 }
 
 export function excluirTarefa(id) {
+    
     const tamanhoAntes = tarefas.length;
     tarefas = tarefas.filter(tarefa => tarefa.id !== id);
     if (tamanhoAntes === tarefas.length) {
